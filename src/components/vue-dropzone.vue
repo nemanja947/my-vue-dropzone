@@ -302,7 +302,6 @@ export default {
           thumbnails[i].style["object-fit"] = "contain";
         }
       }
-      this.dropzone.emit("complete", file);
       if (this.dropzone.options.maxFiles) this.dropzone.options.maxFiles--;
       this.dropzone.files.push(file);
       this.$emit("vdropzone-file-added-manually", file);
